@@ -37,7 +37,8 @@ define([
 
         }
         if (autorun){
-          Jupyter.notebook.restart_run_all();
+          //Jupyter.notebook.restart_run_all();
+          Jupyter.notebook.execute_all_cells();
         }
       };
       // Button to add default cell
