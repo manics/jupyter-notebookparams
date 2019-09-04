@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include jupyter_notebookparams/*
+include jupyter_notebookparams.json
