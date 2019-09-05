@@ -1,0 +1,8 @@
+language: python
+
+python:
+  - "3.6"
+
+script:
+  - python setup.py sdist
+  - python -mpip install dist/*.tar.gz

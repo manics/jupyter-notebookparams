@@ -1,7 +1,7 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
-    name='jupyter_notebookparams',
+    name='jupyter-notebookparams',
     version='0.0.1',
     author='Simon Li',
     author_email='spli@dundee.ac.uk',
@@ -15,8 +15,9 @@ setup(
     },
     description='Pass URL parameters to a Jupyter notebook',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     install_requires=[
-        'notebook>=5.0.0',
+        'notebook',
     ],
     data_files=[(
             'share/jupyter/nbextensions/jupyter-notebookparams', [
