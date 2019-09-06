@@ -25,8 +25,8 @@ define([
           break;
         }
       }
-      if (autorun){
-        if (Jupyter.notebook.kernel.is_connected()) {
+      if (autorun) {
+        if (Jupyter.notebook.kernel && Jupyter.notebook.kernel.is_connected()) {
           console.log('notebookparams: kernel connected, autorun');
           Jupyter.notebook.execute_all_cells();
         }

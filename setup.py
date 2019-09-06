@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='jupyter-notebookparams',
-    version='0.0.2',
+    version='0.0.3',
     author='Simon Li',
     author_email='spli@dundee.ac.uk',
     packages=[
