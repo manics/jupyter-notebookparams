@@ -20,13 +20,22 @@ define([
           });
           if (text) {
             cells[c].set_text(PARAMETERS_MARKER + '\n' + text);
-            console.log('Setting parameters in cell ' + c);
+            console.log('notebookparams: setting parameters in cell ' + c);
           }
           break;
         }
       }
       if (autorun){
-        Jupyter.notebook.execute_all_cells();
+        if (Jupyter.notebook.kernel.is_connected()) {
+          console.log('notebookparams: kernel connected, autorun');
+          Jupyter.notebook.execute_all_cells();
+        }
+        else {
+          console.log('notebookparams: waiting for kernel_ready before autorun');
+          events.on('kernel_ready.Kernel', function(event, data) {
+            Jupyter.notebook.execute_all_cells();
+          });
+        }
       }
     };
     // Run on start

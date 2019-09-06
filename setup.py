@@ -2,13 +2,13 @@ from setuptools import setup
 
 setup(
     name='jupyter-notebookparams',
-    version='0.0.1',
+    version='0.0.2',
     author='Simon Li',
     author_email='spli@dundee.ac.uk',
     packages=[
         'jupyter_notebookparams',
     ],
-    # url='http://pypi.python.org/pypi/TODO/',
+    url='https://github.com/manics/jupyter-notebookparams',
     license='MIT',
     package_data={
         'jupyter_notebookparams': ['jupyter_notebookparams/static/main.js'],
