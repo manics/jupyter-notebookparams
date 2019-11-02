@@ -28,3 +28,5 @@ The content of the first cell starting with `# Parameters:` will be replaced wit
     b = False
 
 Add the parameter `autorun=true` to automatically run the notebook.
+
+**WARNING**: This extension does not parse the parameter values so arbitrary code can be executed in the parameter value.
