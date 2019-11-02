@@ -1,5 +1,6 @@
 Jupyter Notebook Params
 =======================
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manics/jupyter-notebookparams/master?urlpath=notebooks%2Fexample.ipynb%3Fa%3D1%26b%3D%22whatever%22%26autorun%3Dtrue)
 
 Takes query parameters from a url to update a parameter cell of a jupyter notebook.
 
