@@ -40,7 +40,9 @@ define([
     };
     // Run on start
     function load_ipython_extension() {
-      set_parameters();
+      events.on('notebook_loaded.Notebook', function(event, data) {
+        set_parameters();
+      });
     }
     return {
         load_ipython_extension: load_ipython_extension
