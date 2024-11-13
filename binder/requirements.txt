@@ -1,0 +1,4 @@
+# https://discourse.jupyter.org/t/notebook-7-on-mybinder-org-and-repo2docker/27924
+notebook==6.*
+jupyter-server==1.*
+jupyterlab==3.*
