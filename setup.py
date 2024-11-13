@@ -17,7 +17,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     install_requires=[
-        'notebook',
+        'notebook<7',
     ],
     data_files=[(
             'share/jupyter/nbextensions/jupyter-notebookparams', [
